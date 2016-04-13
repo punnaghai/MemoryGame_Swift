@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A3EBE4A102DD6FF87713908 /* Pods_MemoryGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8C94D43C926B090DCF400 /* Pods_MemoryGame.framework */; };
+		FA839F411CBD074A004752CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA839F401CBD074A004752CE /* AppDelegate.swift */; };
+		FA839F461CBD074A004752CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA839F441CBD074A004752CE /* Main.storyboard */; };
+		FA839F481CBD074A004752CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA839F471CBD074A004752CE /* Assets.xcassets */; };
+		FA839F4B1CBD074A004752CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA839F491CBD074A004752CE /* LaunchScreen.storyboard */; };
+		FA839F571CBD0997004752CE /* FlickrImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA839F531CBD0997004752CE /* FlickrImageService.swift */; };
+		FA839F581CBD0997004752CE /* FlickrImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA839F541CBD0997004752CE /* FlickrImageCell.swift */; };
+		FA839F591CBD0997004752CE /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA839F551CBD0997004752CE /* FlickrPhoto.swift */; };
+		FA839F5A1CBD0997004752CE /* FlickrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA839F561CBD0997004752CE /* FlickrClient.swift */; };
+		FA839F5C1CBD09BD004752CE /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA839F5B1CBD09BD004752CE /* MemoryViewController.swift */; };
+		FA839F5E1CBD1593004752CE /* CustomImageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA839F5D1CBD1593004752CE /* CustomImageFlowLayout.swift */; };
+		FA839F601CBD603B004752CE /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA839F5F1CBD603B004752CE /* Array.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DB90F41D0A332FDBF28DD72 /* Pods-MemoryGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryGame/Pods-MemoryGame.release.xcconfig"; sourceTree = "<group>"; };
+		69F10DBC4E81E94A201CCC4B /* Pods-MemoryGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryGame/Pods-MemoryGame.debug.xcconfig"; sourceTree = "<group>"; };
+		88C8C94D43C926B090DCF400 /* Pods_MemoryGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1F298F1CBEA75D00039CBA /* MemoryGame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemoryGame-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA839F3D1CBD074A004752CE /* MemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA839F401CBD074A004752CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA839F451CBD074A004752CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA839F471CBD074A004752CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA839F4A1CBD074A004752CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA839F4C1CBD074B004752CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA839F531CBD0997004752CE /* FlickrImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrImageService.swift; sourceTree = "<group>"; };
+		FA839F541CBD0997004752CE /* FlickrImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrImageCell.swift; sourceTree = "<group>"; };
+		FA839F551CBD0997004752CE /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
+		FA839F561CBD0997004752CE /* FlickrClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrClient.swift; sourceTree = "<group>"; };
+		FA839F5B1CBD09BD004752CE /* MemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
+		FA839F5D1CBD1593004752CE /* CustomImageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageFlowLayout.swift; sourceTree = "<group>"; };
+		FA839F5F1CBD603B004752CE /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA839F3A1CBD074A004752CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3EBE4A102DD6FF87713908 /* Pods_MemoryGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7133E529B9CDB6AC9BBA32C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69F10DBC4E81E94A201CCC4B /* Pods-MemoryGame.debug.xcconfig */,
+				1DB90F41D0A332FDBF28DD72 /* Pods-MemoryGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE9967014495B389B0CB2DD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88C8C94D43C926B090DCF400 /* Pods_MemoryGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA839F341CBD074A004752CE = {
+			isa = PBXGroup;
+			children = (
+				FA1F298F1CBEA75D00039CBA /* MemoryGame-Bridging-Header.h */,
+				FA839F3F1CBD074A004752CE /* MemoryGame */,
+				FA839F3E1CBD074A004752CE /* Products */,
+				DE9967014495B389B0CB2DD8 /* Frameworks */,
+				D7133E529B9CDB6AC9BBA32C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FA839F3E1CBD074A004752CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA839F3D1CBD074A004752CE /* MemoryGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA839F3F1CBD074A004752CE /* MemoryGame */ = {
+			isa = PBXGroup;
+			children = (
+				FA839F5D1CBD1593004752CE /* CustomImageFlowLayout.swift */,
+				FA839F5B1CBD09BD004752CE /* MemoryViewController.swift */,
+				FA839F531CBD0997004752CE /* FlickrImageService.swift */,
+				FA839F541CBD0997004752CE /* FlickrImageCell.swift */,
+				FA839F551CBD0997004752CE /* FlickrPhoto.swift */,
+				FA839F561CBD0997004752CE /* FlickrClient.swift */,
+				FA839F401CBD074A004752CE /* AppDelegate.swift */,
+				FA839F441CBD074A004752CE /* Main.storyboard */,
+				FA839F471CBD074A004752CE /* Assets.xcassets */,
+				FA839F491CBD074A004752CE /* LaunchScreen.storyboard */,
+				FA839F4C1CBD074B004752CE /* Info.plist */,
+				FA839F5F1CBD603B004752CE /* Array.swift */,
+			);
+			path = MemoryGame;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA839F3C1CBD074A004752CE /* MemoryGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA839F4F1CBD074B004752CE /* Build configuration list for PBXNativeTarget "MemoryGame" */;
+			buildPhases = (
+				CCCEC67D2CE926CA5303246C /* Check Pods Manifest.lock */,
+				FA839F391CBD074A004752CE /* Sources */,
+				FA839F3A1CBD074A004752CE /* Frameworks */,
+				FA839F3B1CBD074A004752CE /* Resources */,
+				20B2FBF0DF01794FFBD7B88C /* Embed Pods Frameworks */,
+				C7AFE9BB6C53D9B6DDB51370 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryGame;
+			productName = Pairs;
+			productReference = FA839F3D1CBD074A004752CE /* MemoryGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA839F351CBD074A004752CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Punnaghai Puvi";
+				TargetAttributes = {
+					FA839F3C1CBD074A004752CE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6EFGAH223G;
+					};
+				};
+			};
+			buildConfigurationList = FA839F381CBD074A004752CE /* Build configuration list for PBXProject "MemoryGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA839F341CBD074A004752CE;
+			productRefGroup = FA839F3E1CBD074A004752CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA839F3C1CBD074A004752CE /* MemoryGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA839F3B1CBD074A004752CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA839F4B1CBD074A004752CE /* LaunchScreen.storyboard in Resources */,
+				FA839F481CBD074A004752CE /* Assets.xcassets in Resources */,
+				FA839F461CBD074A004752CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B2FBF0DF01794FFBD7B88C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MemoryGame/Pods-MemoryGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7AFE9BB6C53D9B6DDB51370 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MemoryGame/Pods-MemoryGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCCEC67D2CE926CA5303246C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA839F391CBD074A004752CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA839F411CBD074A004752CE /* AppDelegate.swift in Sources */,
+				FA839F581CBD0997004752CE /* FlickrImageCell.swift in Sources */,
+				FA839F5A1CBD0997004752CE /* FlickrClient.swift in Sources */,
+				FA839F5E1CBD1593004752CE /* CustomImageFlowLayout.swift in Sources */,
+				FA839F591CBD0997004752CE /* FlickrPhoto.swift in Sources */,
+				FA839F601CBD603B004752CE /* Array.swift in Sources */,
+				FA839F571CBD0997004752CE /* FlickrImageService.swift in Sources */,
+				FA839F5C1CBD09BD004752CE /* MemoryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA839F441CBD074A004752CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA839F451CBD074A004752CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA839F491CBD074A004752CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA839F4A1CBD074A004752CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA839F4D1CBD074B004752CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA839F4E1CBD074B004752CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA839F501CBD074B004752CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69F10DBC4E81E94A201CCC4B /* Pods-MemoryGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/MemoryGame/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DateStructures.MemoryGame;
+				PRODUCT_NAME = MemoryGame;
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoryGame-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		FA839F511CBD074B004752CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB90F41D0A332FDBF28DD72 /* Pods-MemoryGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/MemoryGame/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DateStructures.MemoryGame;
+				PRODUCT_NAME = MemoryGame;
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoryGame-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA839F381CBD074A004752CE /* Build configuration list for PBXProject "MemoryGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA839F4D1CBD074B004752CE /* Debug */,
+				FA839F4E1CBD074B004752CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA839F4F1CBD074B004752CE /* Build configuration list for PBXNativeTarget "MemoryGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA839F501CBD074B004752CE /* Debug */,
+				FA839F511CBD074B004752CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA839F351CBD074A004752CE /* Project object */;
+}

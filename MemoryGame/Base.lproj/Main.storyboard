@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Memory View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MemoryViewController" customModule="Pairs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Game Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVH-XW-iXv">
+                                <rect key="frame" x="233" y="545" width="134" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="m0M-dz-wiG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.46592310855263158" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvG-4g-3EO">
+                                <rect key="frame" x="200" y="570" width="200" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="urf-Vp-m1M"/>
+                                </constraints>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame_Generate:" destination="BYZ-38-t0r" eventType="touchDown" id="Faw-Gx-ZDH"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WHk-Jm-FWh">
+                                <rect key="frame" x="40" y="25" width="520" height="510"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BIx-zx-xVK">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickrCell" id="XEZ-0g-rqz" customClass="FlickrImageCell" customModule="Pairs" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="2" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7w-lO-UPh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="i7w-lO-UPh" firstAttribute="width" secondItem="XEZ-0g-rqz" secondAttribute="width" id="L0s-Ec-LLB"/>
+                                            <constraint firstItem="i7w-lO-UPh" firstAttribute="height" secondItem="XEZ-0g-rqz" secondAttribute="height" id="L4l-OM-0SZ"/>
+                                            <constraint firstItem="i7w-lO-UPh" firstAttribute="centerY" secondItem="XEZ-0g-rqz" secondAttribute="centerY" id="V0q-ck-JNN"/>
+                                            <constraint firstItem="i7w-lO-UPh" firstAttribute="centerX" secondItem="XEZ-0g-rqz" secondAttribute="centerX" id="W3a-nS-pBP"/>
+                                        </constraints>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="i7w-lO-UPh" id="9eL-Gv-exF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OVH-XW-iXv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="0qW-Cb-BgX"/>
+                            <constraint firstItem="OVH-XW-iXv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="2Sw-9m-6ub"/>
+                            <constraint firstItem="OVH-XW-iXv" firstAttribute="top" secondItem="WHk-Jm-FWh" secondAttribute="bottom" constant="10" id="2zj-jP-y3i"/>
+                            <constraint firstItem="nvG-4g-3EO" firstAttribute="top" secondItem="WHk-Jm-FWh" secondAttribute="bottom" constant="20" id="BPO-JY-tfo"/>
+                            <constraint firstItem="nvG-4g-3EO" firstAttribute="top" secondItem="OVH-XW-iXv" secondAttribute="bottom" constant="10" id="CID-T4-OGM"/>
+                            <constraint firstItem="OVH-XW-iXv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DJF-aa-TkP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OVH-XW-iXv" secondAttribute="bottom" constant="20" id="DkP-Fd-AAI"/>
+                            <constraint firstItem="nvG-4g-3EO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GPp-Xe-rwc"/>
+                            <constraint firstItem="WHk-Jm-FWh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="IPN-Y3-Pjc"/>
+                            <constraint firstItem="WHk-Jm-FWh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="NvF-aM-nTz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WHk-Jm-FWh" secondAttribute="bottom" constant="100" id="PzQ-hU-8Xe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WHk-Jm-FWh" secondAttribute="trailing" constant="20" id="RH4-bP-8Qi"/>
+                            <constraint firstItem="nvG-4g-3EO" firstAttribute="top" secondItem="WHk-Jm-FWh" secondAttribute="bottom" constant="10" id="SkS-FJ-FNF"/>
+                            <constraint firstItem="WHk-Jm-FWh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Txg-DJ-IoW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OVH-XW-iXv" secondAttribute="trailing" constant="20" id="W3D-BB-mcp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nvG-4g-3EO" secondAttribute="bottom" constant="10" id="Yae-NH-rDk"/>
+                            <constraint firstItem="WHk-Jm-FWh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cEo-ZU-IAi"/>
+                            <constraint firstItem="WHk-Jm-FWh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="s7Q-u3-i2G"/>
+                            <constraint firstItem="OVH-XW-iXv" firstAttribute="centerX" secondItem="nvG-4g-3EO" secondAttribute="centerX" id="tEz-vS-Akb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OVH-XW-iXv" secondAttribute="bottom" constant="20" id="vHU-Fm-qW8"/>
+                            <constraint firstItem="WHk-Jm-FWh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zow-ib-VEu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IPN-Y3-Pjc"/>
+                                <exclude reference="Txg-DJ-IoW"/>
+                                <exclude reference="0qW-Cb-BgX"/>
+                                <exclude reference="2Sw-9m-6ub"/>
+                                <exclude reference="W3D-BB-mcp"/>
+                                <exclude reference="tEz-vS-Akb"/>
+                                <exclude reference="BPO-JY-tfo"/>
+                                <exclude reference="SkS-FJ-FNF"/>
+                                <exclude reference="DkP-Fd-AAI"/>
+                                <exclude reference="PzQ-hU-8Xe"/>
+                                <exclude reference="vHU-Fm-qW8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnNewGame" destination="nvG-4g-3EO" id="5JM-Zy-1GD"/>
+                        <outlet property="imageCollection" destination="WHk-Jm-FWh" id="SWg-cc-a4Q"/>
+                        <outlet property="statusLabel" destination="OVH-XW-iXv" id="KuY-AF-eCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
